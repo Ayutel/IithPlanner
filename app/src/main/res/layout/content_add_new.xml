@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+</RelativeLayout>
+    <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="20dp"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="com.example.ayushi.iithplanner.AddNew"
+tools:showIn="@layout/activity_add_new"
+    >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Department"/>
+
+<EditText
+    android:id="@+id/etDepartment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Course Name"/>
+
+<EditText
+    android:id="@+id/etCourseName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Course Code"/>
+
+<EditText
+    android:id="@+id/etCourseCode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"/>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Test/Assignment dropdown"
+
+    android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name it yourself"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload a pic/take one"
+
+        android:layout_marginBottom="20dp"/>
+
+
+<Button
+    android:id="@+id/bAdd"
+    android:text="Add"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</LinearLayout>
