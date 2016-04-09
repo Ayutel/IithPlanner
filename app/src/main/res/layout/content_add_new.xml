@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-</RelativeLayout>
-    <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
@@ -11,19 +9,35 @@ android:padding="20dp"
 app:layout_behavior="@string/appbar_scrolling_view_behavior"
 tools:context="com.example.ayushi.iithplanner.AddNew"
 tools:showIn="@layout/activity_add_new"
-    >
+    android:weightSum="1">
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Department"/>
+    <Spinner
+        android:id="@+id/sDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/department"
+        android:spinnerMode="dropdown"/>
 
-<EditText
-    android:id="@+id/etDepartment"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="10dp"/>
-<TextView
+    <Spinner
+        android:id="@+id/AorTspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/assignmentOrTest"
+        android:spinnerMode="dropdown"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name it"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.02" />
+
+    <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Course Name"/>
@@ -37,46 +51,36 @@ tools:showIn="@layout/activity_add_new"
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Course Code"/>
+    android:text="Year of assignment or Test"/>
 
 <EditText
-    android:id="@+id/etCourseCode"
+    android:id="@+id/etYear"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="10dp"/>
 
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Test/Assignment dropdown"
-
-    android:layout_marginBottom="20dp"/>
-
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name it yourself"/>
+        android:id="@+id/bImage"
+        android:layout_gravity="center_horizontal"
+        android:minHeight="60dp"
+        android:minWidth="60dp" />
 
-    <EditText
-        android:id="@+id/etName"
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"/>
+        android:text="Upload a picture"
+        android:id="@+id/bCapture"
+        android:nestedScrollingEnabled="false" />
 
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Upload a pic/take one"
-
-        android:layout_marginBottom="20dp"/>
-
-
-<Button
+    <Button
     android:id="@+id/bAdd"
     android:text="Add"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:ellipsize="start"
+        style="@style/Widget.AppCompat.Button.Colored" />
 </LinearLayout>
