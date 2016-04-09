@@ -112,7 +112,12 @@ public class AddNew extends AppCompatActivity implements View.OnClickListener
         {
             case R.id.bCapture:
 
-                //launchCamera(v);
+                launchCamera(v);
+
+                break;
+
+            case R.id.bAdd:
+
                 String name=etName.getText().toString();
                 String AoT=abc;
                 String dept=xyz;
@@ -124,21 +129,6 @@ public class AddNew extends AppCompatActivity implements View.OnClickListener
                 System.out.println("dept:"+dept);
                 System.out.println("Year:  "+year);
                 System.out.println("Course Name: "+courseName);
-                break;
-
-            case R.id.bAdd:
-
-               /* String name=etName.getText().toString();
-                String AoT=abc;
-                String dept=xyz;
-                String year=etYear.getText().toString();
-                String courseName=etCourseName.getText().toString();
-
-                System.out.println("Name:"+name);
-                System.out.println("AoT:"+AoT);
-                System.out.println("dept:"+dept);
-                System.out.println("Year:  "+year);
-                System.out.println("Course Name: "+courseName);*/
 
 
 
